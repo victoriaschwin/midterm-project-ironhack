@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  ;
+}
+
+body{
+  background-color: #F2F4FC;
 }
 
 .flex {
@@ -21,14 +24,14 @@
 }
 
 .hero-portrait {
-  max-width: 32rem;
+  max-width: 30rem;
 }
 
 nav {
   justify-content: space-between;
   align-items: center;
   width: 29rem;
-  margin: 2rem 3.5rem;
+  margin: 2rem 2.2rem;
 }
 
 nav>div>a>img {
@@ -45,7 +48,6 @@ nav>div>a>img {
 .hero{
   margin:1rem;
   width: max-content;
-  margin-left: 2.3rem;
 }
 .hero > div{
   text-align: center;
@@ -67,11 +69,104 @@ nav>div>a>img {
 }
 .logos{
   width: 33rem;
-    gap: 3.5rem;
+    gap: 1.5rem;
     margin: 2.5rem 2rem 0;
     flex-wrap: wrap;
 }
 .logos > img{
   width: 12rem;
   padding: 0 1rem;
+
+}
+
+.testimonies{
+  background-color: #292E47;
+  min-width: max-content;
+  margin: 1.5rem 0;
+}
+
+.testimonies > div{
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonies > h2{
+  color: #F2F4FC;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 29rem;
+}
+
+.testimonies > p {
+  color: #FFC600;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 29rem;
+
+}
+
+.booking-profile{
+  width: 5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.booking > p{
+color: #A2D6F9;
+font-size: 1.2rem;
+}
+
+.booking > span{
+  color: #F2F4FC;
+  font-size: 0.813rem;
+}
+
+.services{
+  min-width: max-content;
+}
+
+.services > h2{
+  color:#292E47;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  min-width: 29rem;
+}
+
+.container{
+  max-width: 27rem;
+  margin: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.container > div{
+  border-radius: 50%;
+    background-color: #D1EDFF;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.container > h3{
+  color: #292E47;
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+}
+
+.container > p{
+  color: #6B708D;
+  font-size: 1.45rem;
+  padding: 0rem 1rem 2rem;
+}
+
+.container > a{
+  
+  color: #072AC8;
+  padding: 1.5rem 1rem;
+  font-size: 1.26rem;
+
 }
