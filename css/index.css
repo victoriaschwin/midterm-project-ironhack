@@ -47,6 +47,7 @@ nav>div>a>img {
   color: white;
   font-size: 1.06rem;
   padding: 1rem 2rem;
+  border: none;
 }
 
 .hero{
@@ -240,4 +241,192 @@ padding: 1rem;
   color: #072AC8;
   font-size: 1.06rem;
   padding: 0.5rem
+}
+
+@media (min-width: 700px){
+  nav {
+    width:-webkit-fill-available;
+    margin: 2rem 2.2rem;
+  }
+
+  nav>div>a>img {
+    width: 5rem;
+}
+
+  .hidden{
+    display: block;
+  }
+
+  .hidden > a{
+    color:#6B708D;
+    font-size: 1.06rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+
+  .hidden > a:active{
+    color:#072AC8
+  }
+
+  .hero > div > h1 {
+    font-size: 3.75rem;
+    text-align: left;
+    margin-top: 8rem;
+    max-width: 40rem;
+}
+
+.hero > div > p {
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 1rem 0;
+  max-width: 29rem
+}
+
+  .hero{
+    width: -webkit-fill-available;
+    flex-direction: row;
+    margin: 4rem;
+    justify-content: center;
+  }
+
+  .hero > div{
+    max-width: -webkit-fill-available;
+    align-items: flex-start
+  }
+
+  .hero-portrait {
+    max-width: 34rem;
+}
+
+  .credit-card{
+    width: 20rem;
+    position: absolute;
+    top: 88px;
+    right: 30vw;
+  }
+
+  .thumbs-up{
+    width: 20rem;
+    position: absolute;
+    top: 534px;
+    right: 11px;
+}
+  .buttons{
+    align-items: center;
+    gap: 2rem
+  }
+  .link-work {
+    padding-bottom: 0;
+}
+.logos {
+  width: -webkit-fill-available;
+  margin: 8.5rem 2rem;}
+
+.logos > img {
+  width: 10rem;}
+
+  .projects{
+    display:flex;
+    margin-bottom: 10rem;
+  }
+
+  .testimonies{
+    background-image: url('../assets/testimonies/orbit.png');
+    background-repeat: no-repeat;
+    background-size: 111%;
+    height: 41rem;
+  }
+  .testimonies > img{
+    width:10rem;
+  }
+
+  .top-left{
+    position: relative;
+    top: 82px;
+    left: 80px;
+  }
+  .top-right{
+    position: relative;
+    top: -78px;
+    left: 83vw;
+  }
+  .bottom-right{
+    position: relative;
+    bottom: 330px;
+    right: -84vw;
+  }
+  .bottom-left{
+    position: relative;
+    top: -168px;
+    left: 75px;
+  }
+
+  .testimonies > h2{
+        padding:0;
+        max-width: 48rem;
+        position: relative;
+        top: -172px;
+        right: -24vw;
+  }
+
+  .testimonies > p{
+    max-width: 36rem;
+    position: relative;
+    top: -93px;
+    left: 30vw;
+  }
+
+  .testimonies > div{
+    position: relative;
+    top: -43px;
+    left: 3vw;
+  }
+
+  .desktop{
+    display: flex;
+    margin: 0 5rem;
+  }
+
+  .services {
+    min-width: -webkit-fill-available;
+    margin-bottom: 10rem;
+}
+
+.services > h2{
+  margin: 7rem;
+  text-align: start;
+}
+
+.contact{
+  padding: 10rem 0;
+  margin: 0 3rem;
+}
+.contact > h2 {
+  font-size: 2.5rem;
+}
+
+footer{
+  flex-direction: row !important;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+}
+
+.address > img {
+  width: 8rem;
+  margin: 1rem 0;
+}
+
+.address > address{
+  padding: 1rem 0;
+    max-width: 16rem;
+}
+
+.grid{
+  gap: 3.5rem;
+}
 }

@@ -15,7 +15,7 @@
       </div>
       <div class="hidden">
         <a href="index.html">Home</a>
-        <a href="#">Projects</a>
+        <a href="project1.html">Projects</a>
         <a href="#">Services</a>
       </div>
       <div>
@@ -29,14 +29,17 @@
           Circle is a digital design and development studio. We design and
           develop astonishing websites and mobile apps.
         </p>
-        <a href="project1.html" class="blue-btn">Get in touch</a>
+        <div class="flex buttons">
+          <a href="project1.html" class="blue-btn">Get in touch</a>
         <a href="contact.html" class="link-work">See our work</a>
+        </div>
+        
       </div>
-      <div>
+      <div class=>
         <img
           src="assets/hero/card-1.png"
           alt="image of a credit card"
-          class="hidden"
+          class="hidden credit-card"
         />
         <img
           src="assets/hero/hero-image.png"
@@ -46,7 +49,7 @@
         <img
           src="assets/hero/card-2.png"
           alt="emoji of a thums-upp and the label project has been accepted"
-          class="hidden"
+          class="hidden thumbs-up"
         />
       </div>
     </section>
@@ -63,9 +66,9 @@
     </section>
     <section class="projects">
       <div class="container">
-        <img src="" alt="no photo" />
-        <h2>project</h2>
-        <p>
+        <img src="" alt="no photo" id="project1-img" />
+        <h2 id="project1-h2">project</h2>
+        <p id="project1-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, et
           earum! Id fugit, optio soluta reprehenderit enim dignissimos .
         </p>
@@ -91,10 +94,9 @@
       </div>
     </section>
     <section class="testimonies">
-      <img src="assets/testimonies/memoji-1.png" alt="emoji" class="hidden" />
-      <img src="assets/testimonies/memoji-4.png" alt="emoji" class="hidden" />
-      <img src="assets/testimonies/memoji-3.png" alt="emoji" class="hidden" />
-      <img src="assets/testimonies/memoji-2.png" alt="emoji" class="hidden" />
+      <img src="assets/testimonies/memoji-1.png" alt="emoji" class="hidden top-left" />
+      <img src="assets/testimonies/memoji-2.png" alt="emoji" class="hidden top-right" />
+      
       <h2>Hear What Our Clients Have to Say</h2>
       <p>
         "Circle helped us through every stage of our startup. We really enjoyed
@@ -111,9 +113,12 @@
           <span>Booking.com</span>
         </div>
       </div>
+      <img src="assets/testimonies/memoji-3.png" alt="emoji" class="hidden bottom-left" />
+      <img src="assets/testimonies/memoji-4.png" alt="emoji" class="hidden bottom-right" />
     </section>
     <section class="services">
       <h2>Our Services</h2>
+      <div class="desktop">
       <div class="container">
         <div>
           <img src="assets/services/1.svg" alt="icon of a pen" />
@@ -150,6 +155,7 @@
         </p>
         <a href="#">Learn More</a>
       </div>
+    </div>
     </section>
     <section class="contact flex-column">
       <h2>Do you have any questions?</h2>
@@ -173,5 +179,6 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script type="module" src="javascript/index.js"></script>
   </body>
 </html>

@@ -19,6 +19,11 @@ body{
   flex-direction: column;
 }
 
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .hidden {
   display: none;
 }
@@ -26,7 +31,7 @@ body{
 nav {
   justify-content: space-between;
   align-items: center;
-  width: 29rem;
+  width: -webkit-fill-available;
   margin: 2rem 2.2rem;
 }
 
@@ -34,9 +39,211 @@ nav>div>a>img {
   width: 7rem;
 }
 
-.contact-btn {
+.blue-btn {
   background-color: #072AC8;
   color: white;
   font-size: 1.06rem;
   padding: 1rem 2rem;
+  border: none;
+}
+.main, .projects{
+  margin: 0 3rem;
+}
+
+h1{
+  color:#292E47;
+  font-size: 3rem;
+  padding: 2rem 0;
+
+}
+
+header > div > h2{
+color:#6B708D;
+font-size: 1.8rem;
+}
+
+header > div > p{
+color:#292E47;
+font-size: 1.25rem;
+}
+
+header > div > span{
+  color:#6B708D;
+  font-size: 1.25rem;
+}
+header > div{
+  align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+.main > div > img{
+  color:azure
+}
+
+.main > div > p{
+color:#6B708D;
+font-size: 1.25rem;
+padding: 1.5rem 0;
+}
+
+.container{
+  max-width: 27rem;
+  margin: 1rem;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.container > div{
+  border-radius: 50%;
+    background-color: #D1EDFF;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.container > h3{
+  color: #292E47;
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+}
+
+.container > p{
+  color: #6B708D;
+  font-size: 1.45rem;
+  padding: 0rem 1rem 2rem;
+}
+
+.container > a{
+  
+  color: #072AC8;
+  padding: 1.5rem 1rem;
+  font-size: 1.26rem;
+
+}
+
+.contact{
+  background-color: #FFC600;
+  min-width: 35rem;
+  align-items: center;
+  margin-top:3rem;
+padding: 3rem 0;
+}
+
+.contact > h2{
+  color: #292E47;
+  font-size: 2rem;
+  padding: 1.8rem 0;
+}
+
+.contact > span{
+  color:#292E47;
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.email{
+  background-color: white;
+  color: #292E47;
+  font-size: 1.06rem;
+  border: none;
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+footer{
+  min-width: 35rem;
+  align-items: center;
+}
+
+.address > img{
+  width: 8rem;
+  margin-top: 1.5rem;
+  margin-left: 8rem
+}
+
+.address > address{
+color:#6B708D;
+font-size: 1.06rem;
+padding: 1rem;
+}
+
+.links-footer > a{
+  color: #072AC8;
+  font-size: 1.06rem;
+  padding: 0.5rem
+}
+
+
+@media (min-width: 700px){
+  nav {
+    width:-webkit-fill-available;
+    margin: 2rem 2.2rem;
+  }
+
+  nav>div>a>img {
+    width: 5rem;
+}
+
+  .hidden{
+    display: block;
+  }
+
+  .hidden > a{
+    color:#6B708D;
+    font-size: 1.06rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+
+  .hidden > a:active{
+    color:#072AC8
+  }
+
+  .contact{
+    padding: 10rem 0;
+    margin: 0 3rem;
+  }
+  .contact > h2 {
+    font-size: 2.5rem;
+  }
+
+  footer{
+    flex-direction: row !important;
+    justify-content: space-around;
+    margin: 3rem 0;
+  }
+  
+  .address{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .address > img {
+    width: 8rem;
+    margin: 1rem 0;
+  }
+  
+  .address > address{
+    padding: 1rem 0;
+      max-width: 16rem;
+  }
+  
+  .grid{
+    gap: 3.5rem;
+  }
+
+  h1{
+    font-size: 3.75rem;
+  }
+
+ .main, .projects {
+    margin: 0 6rem;
+}
+  .projects{
+    display:flex;
+    margin-bottom: 10rem;
+    margin-top: 5rem
+  }
+
+ 
 }
