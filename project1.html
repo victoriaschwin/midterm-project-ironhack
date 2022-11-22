@@ -25,44 +25,44 @@
     </nav>
     <section class="main">
       <header>
-        <h1>Project Name</h1>
+        <h1 id="title">Project Name</h1>
         <div class="flex">
-          <h2>Subtitle</h2>
-        <p>Completed on <span>2/2/22</span></p>
+          <h2 id="subtitle">Subtitle</h2>
+        <p>Completed on <span id="date">2/2/22</span></p>
         </div>
         
       </header>
       <div>
-        <img src="" alt="photo of the project">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, rerum reiciendis non atque,
+        <img src="" alt="photo of the project" id="photo">
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, rerum reiciendis non atque,
           hic unde numquam temporibus nostrum accusamus amet nam, dolore doloremque.
           Quam fugiat nulla dolorem odit totam, voluptates dicta perspiciatis maxime magnam iure sed, minima optio,
           ducimus harum temporibus! Consequuntur doloribus officia dolore quaerat aliquid molestiae natus cumque?</p>
       </div>
     </section>
-    <section class="projects">
-      <div class="container">
-        <img src="" alt="no photo" />
-        <h2>project</h2>
-        <p>
+    <section class="projects flex-column">
+      <div class="container project-desktop">
+        <img src="" alt="no photo" id="project1-img" />
+        <h2 id="project1-h2">project</h2>
+        <p id="project1-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, et
           earum! Id fugit, optio soluta reprehenderit enim dignissimos .
         </p>
         <a href="project1.html">Learn More</a>
       </div>
-      <div class="container">
-        <img src="" alt="" />
-        <h2>project</h2>
-        <p>
+      <div class="container project-desktop">
+        <img src="" alt="" id="project2-img"/>
+        <h2 id="project2-h2">project</h2>
+        <p id="project2-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, et
           earum! Id fugit, optio soluta reprehenderit enim dignissimos .
         </p>
         <a href="project2.html">Learn More</a>
       </div>
-      <div class="container">
-        <img src="" alt="" />
-        <h2>project</h2>
-        <p>
+      <div class="container project-desktop">
+        <img src="" alt="" id="project3-img" />
+        <h2 id="project3-h2">project</h2>
+        <p id="project3-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, et
           earum! Id fugit, optio soluta reprehenderit enim dignissimos .
         </p>
@@ -72,8 +72,8 @@
     <section class="contact flex-column">
       <h2>Do you have any questions?</h2>
       <span>Let us help you!</span>
-      <form>
-        <input type="email" placeholder="Enter your email" class="email"/>
+      <form name="contact" action="" onsubmit="return validate()" method="POST">
+        <input type="email" placeholder="Enter your email" class="email" name="email" required/>
         <button type="submit" class="blue-btn">Suscribe</button>
       </form>
     </section>
@@ -91,6 +91,7 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script type="module" src="./javascript/index.js"></script>
   </body>
 
 </html>

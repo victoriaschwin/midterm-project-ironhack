@@ -186,7 +186,7 @@ input, textarea{
   }
 
   form {
-    max-width: -webkit-fill-available;
+    max-width: 62rem;
 }
 
 .form{
@@ -198,22 +198,21 @@ label{
 }
   
 #name{
-  width: 91rem;
+  width: -webkit-fill-available;
     height: 5rem;
 }
 
 #phone, #email{
 
-  width: 44.3rem;
+  width: 28.9rem;
   height: 5rem;
 }
 
 #message, .blue-btn{
-  width: 91rem;
+  width: -webkit-fill-available;
 }
 
 .blue-btn{
-  width: 91rem;
   height: 5rem;
 }
 }

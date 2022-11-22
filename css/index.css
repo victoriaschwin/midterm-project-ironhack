@@ -50,6 +50,12 @@ nav>div>a>img {
   border: none;
 }
 
+.buttons{
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
 .hero{
   margin:1rem;
   width: max-content;
@@ -84,7 +90,6 @@ nav>div>a>img {
   color:#6B708D;
   font-size: 1.06rem;
   font-weight: 500;
-  padding-bottom: 1rem;
 }
 
 .logos{
@@ -156,8 +161,15 @@ font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1rem;
   min-width: 29rem;
+  margin-left: -9vw;
+  padding: 3rem 0;
 }
 
+.projects{
+  align-items: center;
+  max-width: max-content;
+  padding: 1rem 2rem;
+}
 .container{
   max-width: 27rem;
   margin: 1rem;
@@ -172,7 +184,7 @@ font-size: 1.2rem;
     padding: 1rem;
 }
 
-.container > h3{
+.container > h2{
   color: #292E47;
     font-size: 1.8rem;
     padding: 2rem 1rem;
@@ -192,16 +204,27 @@ font-size: 1.2rem;
 
 }
 
+.container > img {
+  max-width: 26rem;
+  max-height: 27rem;
+}
+
+#project2-img{
+  width: 27rem;
+  height: 27rem;
+  object-fit: cover;
+  object-position: 47% 31%;
+}
 .contact{
   background-color: #FFC600;
-  min-width: 35rem;
+  max-width: 36rem;
   align-items: center;
 }
 
 .contact > h2{
   color: #292E47;
   font-size: 2rem;
-  padding: 1.8rem 0;
+  padding: 4.8rem 0;
 }
 
 .contact > span{
@@ -216,12 +239,12 @@ font-size: 1.2rem;
   font-size: 1.06rem;
   border: none;
   padding: 1.1rem 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   margin-right: 0.5rem;
 }
 
 footer{
-  min-width: 35rem;
+  max-width: 34rem;
   align-items: center;
 }
 
@@ -311,24 +334,39 @@ padding: 1rem;
     top: 534px;
     right: 11px;
 }
-  .buttons{
-    align-items: center;
-    gap: 2rem
-  }
-  .link-work {
-    padding-bottom: 0;
-}
+ 
 .logos {
   width: -webkit-fill-available;
-  margin: 8.5rem 2rem;}
+  margin: 8.5rem 2rem;
+  justify-content: space-evenly;
+}
 
 .logos > img {
   width: 10rem;}
 
   .projects{
-    display:flex;
+    flex-direction: row;
     margin-bottom: 10rem;
+    justify-content: center;
+    max-width: -webkit-fill-available;
+align-items: flex-start;
   }
+
+  .project-desktop{
+    max-width: 22rem;
+  }
+
+  .container > img {
+    max-width: 22rem;
+    max-height: fit-content;
+}
+
+#project2-img {
+  width: 24rem;
+  height: 22rem;
+  object-fit: cover;
+  object-position: 47% 31%;
+}
 
   .testimonies{
     background-image: url('../assets/testimonies/orbit.png');
@@ -400,6 +438,7 @@ padding: 1rem;
 .contact{
   padding: 10rem 0;
   margin: 0 3rem;
+  max-width: 100%;
 }
 .contact > h2 {
   font-size: 2.5rem;
@@ -409,6 +448,7 @@ footer{
   flex-direction: row !important;
   justify-content: space-around;
   margin: 3rem 0;
+  max-width: 100%;
 }
 
 .address{

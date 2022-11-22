@@ -64,10 +64,10 @@ font-size: 1.8rem;
 
 header > div > p{
 color:#292E47;
-font-size: 1.25rem;
+font-size: 1.5rem;
 }
 
-header > div > span{
+#date{
   color:#6B708D;
   font-size: 1.25rem;
 }
@@ -77,13 +77,22 @@ header > div{
     padding: 1.5rem 0;
 }
 .main > div > img{
-  color:azure
+  width: 100%;
+    height: 43rem;
+    object-fit: cover;
 }
 
 .main > div > p{
 color:#6B708D;
 font-size: 1.25rem;
 padding: 1.5rem 0;
+}
+
+
+.projects{
+  align-items: center;
+  max-width: max-content;
+  padding: 1rem 2rem;
 }
 
 .container{
@@ -100,7 +109,7 @@ padding: 1.5rem 0;
     padding: 1rem;
 }
 
-.container > h3{
+.container > h2{
   color: #292E47;
     font-size: 1.8rem;
     padding: 2rem 1rem;
@@ -118,6 +127,18 @@ padding: 1.5rem 0;
   padding: 1.5rem 1rem;
   font-size: 1.26rem;
 
+}
+
+.container > img {
+  max-width: 26rem;
+  max-height: 27rem;
+}
+
+#project2-img{
+  width: 27rem;
+  height: 27rem;
+  object-fit: cover;
+  object-position: 47% 31%;
 }
 
 .contact{
@@ -239,11 +260,29 @@ padding: 1rem;
  .main, .projects {
     margin: 0 6rem;
 }
-  .projects{
-    display:flex;
-    margin-bottom: 10rem;
-    margin-top: 5rem
-  }
+.projects{
+  flex-direction: row;
+  margin-bottom: 10rem;
+  justify-content: center;
+  max-width: -webkit-fill-available;
+align-items: flex-start
+}
+
+.project-desktop{
+  max-width: 22rem;
+}
+
+.container > img {
+  max-width: 22rem;
+  max-height: fit-content;
+}
+
+#project2-img {
+width: 24rem;
+height: 22rem;
+object-fit: cover;
+object-position: 47% 31%;
+}
 
  
 }
