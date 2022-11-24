@@ -91,12 +91,18 @@ label{
   padding: 0.5rem 0;
 }
 
+.contact-text-field {
+  padding-left: 0.9rem;
+  background-color: rgba(107, 112, 141, 0.1);
+}
+
 input, textarea{
   border: none;
   background-color: #6B708D;
   opacity: 0.1;
   color:black;
   height: 4.3rem;
+  opacity: 0.5;
 }
 
 .blue-btn {
@@ -114,11 +120,12 @@ input, textarea{
 }
 
 #email, #phone{
-  width: 17.3rem;
+  width: 37rem;
 }
 
 .second-line{
   gap: 2.5rem;
+  flex-direction: column;
 }
 
 .message{
@@ -128,7 +135,9 @@ input, textarea{
 #message{
   width: 37rem;
   height: 30rem;
+  padding: 1rem 0.5rem;
 }
+
 
 @media (min-width: 700px){
   nav {
@@ -214,5 +223,9 @@ label{
 
 .blue-btn{
   height: 5rem;
+}
+
+.second-line{
+  flex-direction: row;
 }
 }

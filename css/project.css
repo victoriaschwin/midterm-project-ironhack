@@ -166,7 +166,7 @@ padding: 3rem 0;
   color: #292E47;
   font-size: 1.06rem;
   border: none;
-  padding: 1.1rem 1.5rem;
+  padding: 1.1rem 2.5rem;
   margin-bottom: 1rem;
   margin-right: 0.5rem;
 }
@@ -194,6 +194,10 @@ padding: 1rem;
   padding: 0.5rem
 }
 
+.fa-regular{
+  position: relative;
+  left: 5vw;
+}
 
 @media (min-width: 700px){
   nav {
@@ -284,5 +288,7 @@ object-fit: cover;
 object-position: 47% 31%;
 }
 
- 
+.fa-regular{
+  left: 2.5vw;
+}
 }

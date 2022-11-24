@@ -2,7 +2,7 @@
   const response = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan");
   const data = await response.json();
   let newData = data.slice(0,3)
- console.log(newData)
+
   //DOM Elements
 
   //Home Page
@@ -25,18 +25,39 @@
   description_2.innerHTML = newData[1].description;
   description_3.innerHTML = newData[2].description;
 
-
+  //Current date Project
+  
+  let today = new Date();
+  let dd = String(today.getDate()).padStart(2, '0');
+  let mm = String(today.getMonth() + 1).padStart(2, '0'); 
+  let yyyy = today.getFullYear();
+  today = mm + '/' + dd + '/' + yyyy;
+  document.getElementById('date').innerHTML = today
+  
   //Validacion Form
 
+ 
+  function validate(event){
 
+    const formElement = document.getElementById('contact-us')
+    formElement.addEventListener('submit', (event) => {
+      event.preventDefault();
+    });
 
-  function validate(){
-    let mail = document.forms['contact']['email'].value
-    
-    if(!mail){
-      alert('Por favor escribe tu correo')
+    let name = document.forms['contact-us']['name'].value;
+    let mail = document.forms['contact-us']['email'].value;
+    let phone = document.forms['contact-us']['phone'].value;
+    let message = document.forms['contact-us']['message'].value;
+
+    if(!name && !mail && !phone && !message){
+      alert ('Por favor rellena todos los campos');
       return false;
     }
+
+    return true;
+  
+    
+   
   }
 
     //Project Page
@@ -45,6 +66,7 @@
   let subtitle = document.getElementById('subtitle');
   let description = document.getElementById('description');
   
+  let capitalSubtitle = newData[0].brand.replace('c','C')
   title.innerHTML = newData[0].name;
   description.innerHTML = newData[0].description;
-  subtitle.innerHTML = newData[0].brand
+  subtitle.innerHTML = capitalSubtitle
