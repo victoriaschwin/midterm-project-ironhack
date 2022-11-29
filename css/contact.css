@@ -274,4 +274,8 @@ label{
 .second-line{
   flex-direction: row;
 }
+
+.hamburger, .menu, .showMenu{
+  display: none;
+}
 }

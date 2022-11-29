@@ -24,31 +24,32 @@ menuItems.forEach(
 )
 
 //Data API
-  const response = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan");
+  const response = await fetch("https://ghibliapi.herokuapp.com/films");
   const data = await response.json();
-  let newData = data.slice(0,3)
+  console.log(data)
+  
 
   //DOM Elements
 
   //Home Page
-  document.getElementById('project1-img').src = newData[0].image_link;
+  document.getElementById('project1-img').src = data[12].image;
   let projectName_1 = document.getElementById('project1-h2');
   let description_1 = document.getElementById('project1-p');
-  document.getElementById('project2-img').src = newData[1].image_link;
+  document.getElementById('project2-img').src = data[1].image;
   let projectName_2 = document.getElementById('project2-h2');
   let description_2 = document.getElementById('project2-p');
-  document.getElementById('project3-img').src = newData[2].image_link;
+  document.getElementById('project3-img').src = data[2].image;
   let projectName_3 = document.getElementById('project3-h2');
   let description_3 = document.getElementById('project3-p');
 
   //Transform Elements
-  projectName_1.innerHTML = newData[0].name;
-  projectName_2.innerHTML = newData[1].name;
-  projectName_3.innerHTML = newData[2].name;
+  projectName_1.innerHTML = data[12].title;
+  projectName_2.innerHTML = data[1].title;
+  projectName_3.innerHTML = data[2].title;
 
-  description_1.innerHTML = newData[0].description;
-  description_2.innerHTML = newData[1].description;
-  description_3.innerHTML = newData[2].description;
+  description_1.innerHTML = data[12].description;
+  description_2.innerHTML = data[1].description;
+  description_3.innerHTML = data[2].description;
 
   //Current date Project
   
@@ -61,7 +62,6 @@ menuItems.forEach(
   
   //Validacion Form
 
- 
   function validate(event){
 
     const formElement = document.getElementById('contact-us')
@@ -81,17 +81,15 @@ menuItems.forEach(
 
     return true;
   
-    
-   
   }
 
+
     //Project Page
-  document.getElementById('photo').src = newData[0].image_link;
+  document.getElementById('photo').src = data[12].image;
   let title = document.getElementById('title');
   let subtitle = document.getElementById('subtitle');
   let description = document.getElementById('description');
   
-  let capitalSubtitle = newData[0].brand.replace('c','C')
-  title.innerHTML = newData[0].name;
-  description.innerHTML = newData[0].description;
-  subtitle.innerHTML = capitalSubtitle
+  title.innerHTML = data[12].title;
+  description.innerHTML = data[12].description;
+  subtitle.innerHTML = data[12].director

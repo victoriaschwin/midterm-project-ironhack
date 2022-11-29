@@ -254,12 +254,6 @@ font-size: 1.2rem;
   max-height: 27rem;
 }
 
-#project2-img{
-  width: 27rem;
-  height: 27rem;
-  object-fit: cover;
-  object-position: 47% 31%;
-}
 .contact{
   background-color: #FFC600;
   max-width: 36rem;
@@ -408,13 +402,6 @@ align-items: flex-start;
   .container > img {
     max-width: 22rem;
     max-height: fit-content;
-}
-
-#project2-img {
-  width: 24rem;
-  height: 22rem;
-  object-fit: cover;
-  object-position: 47% 31%;
 }
 
   .testimonies{
