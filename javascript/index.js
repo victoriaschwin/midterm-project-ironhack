@@ -1,3 +1,28 @@
+//Menu Hamburguesa
+
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger= document.querySelector(".hamburger");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    menuIcon.style.display = "none";
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
+
 //Data API
   const response = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan");
   const data = await response.json();
